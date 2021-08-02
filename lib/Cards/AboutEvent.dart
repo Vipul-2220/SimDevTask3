@@ -17,15 +17,7 @@ class _AboutEventState extends State<AboutEvent> {
 
   bool is_checked = false;
   bool tap = false;
-  bool tap2 = false;
-  bool tap3 = false;
-  bool tap4 = false;
-  bool tap5 = false;
   final dateformate = DateFormat('dd MMM yy');
-  String dropdownvalue3 = 'Doesn\'t repeat';
-  String dropdownvalue4 = 'Social';
-  String dropdownvalue5 = '9:00 AM';
-  String dropdownvalue6 = '5:00 PM';
 
   DateTime _date = DateTime.now();
   Future<Null> _selectDate(BuildContext context) async {

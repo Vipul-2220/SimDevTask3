@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:simdev_task3/Cards/AboutEvent.dart';
+import 'package:simdev_task3/Cards/WhereIsItHeld.dart';
 import 'package:simdev_task3/TopToolbar.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -135,6 +136,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   child: TopToolbar(),
                 ),
                 AboutEvent(),
+                WhereIsItHeld(),
               ],
             ),
           ),
