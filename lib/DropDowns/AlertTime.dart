@@ -1,21 +1,21 @@
 import 'package:flutter/material.dart';
 
-class TimePeriodNumber extends StatefulWidget {
-  const TimePeriodNumber({Key? key}) : super(key: key);
+class AlertTime extends StatefulWidget {
+  const AlertTime({Key? key}) : super(key: key);
 
   @override
-  _TimePeriodNumberState createState() => _TimePeriodNumberState();
+  _AlertTimeState createState() => _AlertTimeState();
 }
 
-class _TimePeriodNumberState extends State<TimePeriodNumber> {
+class _AlertTimeState extends State<AlertTime> {
 
-  String dropdownvalue = '1';
+  String dropdownvalue = 'minutes';
+
 
   @override
   Widget build(BuildContext context) {
     return Container(
       height: 30,
-      width: 50,
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(5),
         color: Color(0xffF0F0F0),
@@ -25,22 +25,23 @@ class _TimePeriodNumberState extends State<TimePeriodNumber> {
         value: dropdownvalue,
         icon: const Icon(
           Icons.keyboard_arrow_down,
-          color: Colors.black87,
+          color: Color(0xff666666),
         ),
         style: const TextStyle(
-            color: Color(0xff666666), fontSize: 18),
+          color: Color(0xff666666),
+          fontSize: 18,
+        ),
+        underline: null,
         onChanged: (String? newValue) {
           setState(() {
             dropdownvalue = newValue!;
           });
         },
         items: <String>[
-          '1',
-          '2',
-          '3',
-          '4',
-          '5',
-          '6',
+          'minutes',
+          'hours',
+          'days',
+          'weeks',
         ].map<DropdownMenuItem<String>>((String value) {
           return DropdownMenuItem<String>(
             value: value,

@@ -84,7 +84,8 @@ class _AboutEventState extends State<AboutEvent> {
                       borderSide: BorderSide(
                         color: Color(0xff7F71D9),
                       ),
-                    )),
+                    ),
+                ),
               ),
             ),
             SizedBox(

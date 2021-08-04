@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:simdev_task3/Screens/SecondScreen.dart';
 
 class AdressBar extends StatefulWidget {
   const AdressBar({Key? key}) : super(key: key);
@@ -282,7 +283,9 @@ class _AdressBarState extends State<AdressBar> {
                   style: ButtonStyle(
                     backgroundColor: MaterialStateProperty.all(Color(0xff7F71D9)),
                   ),
-                  onPressed: (){},
+                  onPressed: (){
+                    Navigator.of(context).popAndPushNamed(SecondScreen.id);
+                  },
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [

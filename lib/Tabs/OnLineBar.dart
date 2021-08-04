@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:simdev_task3/Screens/SecondScreen.dart';
 
 class OnLineBar extends StatefulWidget {
   const OnLineBar({Key? key}) : super(key: key);
@@ -182,7 +183,9 @@ class _OnLineBarState extends State<OnLineBar> {
                 style: ButtonStyle(
                   backgroundColor: MaterialStateProperty.all(Color(0xff7F71D9)),
                 ),
-                onPressed: (){},
+                onPressed: (){
+                  Navigator.of(context).popAndPushNamed(SecondScreen.id);
+                },
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [

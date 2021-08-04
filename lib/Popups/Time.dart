@@ -20,7 +20,7 @@ class _TimeState extends State<Time> {
   Widget build(BuildContext context) {
     return Container(
       height: 30,
-      width: 200,
+      width: 210,
       child: TextField(
         readOnly: true,
         decoration: InputDecoration(

@@ -17,7 +17,7 @@ class _TimePeriodDaysState extends State<TimePeriodDays> {
       height: 30,
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(5),
-        color: Colors.black12,
+        color: Color(0xffF0F0F0),
       ),
       child: DropdownButton<String>(
         elevation: 0,

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 
 class TopToolbar extends StatefulWidget {
   const TopToolbar({Key? key}) : super(key: key);
@@ -42,9 +43,21 @@ class _TopToolbarState extends State<TopToolbar> {
                   color: Colors.black45,
                 ),
                 Container(
-                  child: Icon(
-                    Icons.monetization_on_outlined,
-                    color: Colors.black45,
+                  decoration: BoxDecoration(
+                      shape: BoxShape.circle,
+                      border: Border.all(
+                        width: 2,
+                        color: Colors.black45,
+                      )
+                  ),
+                  child: CircleAvatar(
+                    backgroundColor: Colors.white,
+                    child: SvgPicture.asset(
+                      'icons/dollar.svg',
+                      color: Colors.black45,
+                      height: 18,
+                    ),
+                    radius: 10,
                   ),
                 ),
                 Container(

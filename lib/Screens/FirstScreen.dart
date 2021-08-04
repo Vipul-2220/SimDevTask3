@@ -1,18 +1,19 @@
 import 'package:flutter/material.dart';
 import 'package:simdev_task3/Cards/AboutEvent.dart';
 import 'package:simdev_task3/Cards/WhereIsItHeld.dart';
-import 'package:simdev_task3/TopToolbar.dart';
+import 'package:simdev_task3/TopToolbar/TopToolbar.dart';
 
-class HomeScreen extends StatefulWidget {
-  static String id = 'HomeScreen';
+class FirstScreen extends StatefulWidget {
 
-  const HomeScreen({Key? key}) : super(key: key);
+  static String id = 'FirstScreen';
+
+  const FirstScreen({Key? key}) : super(key: key);
 
   @override
-  _HomeScreenState createState() => _HomeScreenState();
+  _FirstScreenState createState() => _FirstScreenState();
 }
 
-class _HomeScreenState extends State<HomeScreen> {
+class _FirstScreenState extends State<FirstScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -41,9 +42,9 @@ class _HomeScreenState extends State<HomeScreen> {
                     ),
                   ),
                   Text('Home',
-                  style: TextStyle(
-                    color: Color(0xff7F71D9),
-                  ),
+                    style: TextStyle(
+                      color: Color(0xff7F71D9),
+                    ),
                   )
                 ],
               ),
