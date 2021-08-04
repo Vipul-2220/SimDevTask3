@@ -40,21 +40,20 @@ class _TopToolbar3State extends State<TopToolbar3> {
                 Container(
                   height: 2,
                   width: 50,
-                  color: Colors.black45,
+                  color: Color(0xff7F71D9),
                 ),
                 Container(
                   decoration: BoxDecoration(
                       shape: BoxShape.circle,
                       border: Border.all(
                         width: 2,
-                        color: Colors.black45,
+                        color: Color(0xff7F71D9),
                       )
                   ),
                   child: CircleAvatar(
                     backgroundColor: Colors.white,
                     child: SvgPicture.asset(
                       'icons/dollar.svg',
-                      color: Colors.black45,
                       height: 18,
                     ),
                     radius: 10,
@@ -74,8 +73,8 @@ class _TopToolbar3State extends State<TopToolbar3> {
               ],
             ),
             Padding(
-              padding: const EdgeInsets.symmetric(vertical: 8.0,horizontal: 110),
-              child: Text('Event Details',
+              padding: const EdgeInsets.only(top: 8.0,left: 200),
+              child: Text('Payment',
                 style: TextStyle(
                   fontSize: 12,
                   color: Color(0xff7F71D9),

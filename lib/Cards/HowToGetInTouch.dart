@@ -6,7 +6,7 @@ import 'package:simdev_task3/Popups/Url/InstagramURL.dart';
 import 'package:simdev_task3/Popups/Url/LinkedInURL.dart';
 import 'package:simdev_task3/Popups/Url/TwitterURL.dart';
 import 'package:simdev_task3/Popups/Url/facebookURL.dart';
-// import 'package:simdev_task3/Screens/ThirdScreen.dart';
+import 'package:simdev_task3/Screens/ThirdScreen.dart';
 
 class HowToGetInTouch extends StatefulWidget {
   const HowToGetInTouch({Key? key}) : super(key: key);
@@ -326,7 +326,7 @@ class _HowToGetInTouchState extends State<HowToGetInTouch> {
                         MaterialStateProperty.all(Color(0xff7F71D9)),
                   ),
                   onPressed: () {
-                    // Navigator.of(context).popAndPushNamed(ThirdScreen.id);
+                    Navigator.of(context).popAndPushNamed(ThirdScreen.id);
                   },
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,

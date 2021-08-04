@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:simdev_task3/Screens/FirstScreen.dart';
 import 'package:simdev_task3/Screens/SecondScreen.dart';
-// import 'package:simdev_task3/Screens/ThirdScreen.dart';
+import 'package:simdev_task3/Screens/ThirdScreen.dart';
 // import 'package:js/js.dart';
 
 void main() {
@@ -11,7 +11,7 @@ void main() {
     routes: {
       FirstScreen.id: (context)=> FirstScreen(),
       SecondScreen.id: (context)=> SecondScreen(),
-      // ThirdScreen.id: (context)=> ThirdScreen(),
+      ThirdScreen.id: (context)=> ThirdScreen(),
     },
 
   ));
