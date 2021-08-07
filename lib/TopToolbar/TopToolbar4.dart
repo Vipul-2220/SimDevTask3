@@ -5,14 +5,14 @@ import 'package:simdev_task3/Screens/FourthScreen.dart';
 import 'package:simdev_task3/Screens/SecondScreen.dart';
 import 'package:simdev_task3/Screens/ThirdScreen.dart';
 
-class TopToolbar2 extends StatefulWidget {
-  const TopToolbar2({Key? key}) : super(key: key);
+class TopToolbar4 extends StatefulWidget {
+  const TopToolbar4({Key? key}) : super(key: key);
 
   @override
-  _TopToolbar2State createState() => _TopToolbar2State();
+  _TopToolbar4State createState() => _TopToolbar4State();
 }
 
-class _TopToolbar2State extends State<TopToolbar2> {
+class _TopToolbar4State extends State<TopToolbar4> {
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -54,7 +54,7 @@ class _TopToolbar2State extends State<TopToolbar2> {
                 Container(
                   height: 2,
                   width: 50,
-                  color: Colors.black45,
+                  color: Color(0xff7F71D9),
                 ),
                 GestureDetector(
                   onTap: (){
@@ -62,27 +62,26 @@ class _TopToolbar2State extends State<TopToolbar2> {
                   },
                   child: Container(
                     decoration: BoxDecoration(
-                      shape: BoxShape.circle,
-                      border: Border.all(
-                        width: 2,
-                        color: Colors.black45,
-                      )
+                        shape: BoxShape.circle,
+                        border: Border.all(
+                          width: 2,
+                          color: Color(0xff7F71D9),
+                        )
                     ),
                     child: CircleAvatar(
-                        backgroundColor: Colors.white,
-                        child: SvgPicture.asset(
-                          'icons/dollar.svg',
-                          color: Colors.black45,
-                          height: 18,
-                        ),
-                        radius: 10,
+                      backgroundColor: Colors.white,
+                      child: SvgPicture.asset(
+                        'icons/dollar.svg',
+                        height: 18,
+                      ),
+                      radius: 10,
                     ),
                   ),
                 ),
                 Container(
                   height: 2,
                   width: 50,
-                  color: Colors.black45,
+                  color: Color(0xff7F71D9),
                 ),
                 GestureDetector(
                   onTap: (){
@@ -91,15 +90,15 @@ class _TopToolbar2State extends State<TopToolbar2> {
                   child: Container(
                     child: Icon(
                       Icons.check_circle_outline_outlined,
-                      color: Colors.black45,
+                      color: Color(0xff7F71D9),
                     ),
                   ),
                 ),
               ],
             ),
             Padding(
-              padding: const EdgeInsets.symmetric(vertical: 8.0,horizontal: 110),
-              child: Text('Event Details',
+              padding: const EdgeInsets.only(top: 8.0,left: 260),
+              child: Text('Registrations',
                 style: TextStyle(
                   fontSize: 12,
                   color: Color(0xff7F71D9),

@@ -29,6 +29,7 @@ class _TimePeriodDaysState extends State<TimePeriodDays> {
         style: const TextStyle(
           color: Color(0xff666666),
           fontSize: 18,
+          fontFamily: 'Poppins',
         ),
         underline: null,
         onChanged: (String? newValue) {

@@ -28,11 +28,13 @@ class _WhereIsItHeldState extends State<WhereIsItHeld> {
           children: [
             Padding(
               padding:
-              const EdgeInsets.symmetric(vertical: 10.0, horizontal: 70),
+              const EdgeInsets.symmetric(vertical: 10.0, horizontal: 60),
               child: Text(
                 'Where is it held?',
                 style: TextStyle(
                   fontSize: 30,
+                  fontFamily: 'Poppins',
+                  fontWeight: FontWeight.w600,
                 ),
               ),
             ),
@@ -66,7 +68,8 @@ class _WhereIsItHeldState extends State<WhereIsItHeld> {
                                 style: TextStyle(
                                   color: addressTap == true? Color(0xff7F71D9) : Color(0xff666666),
                                   fontWeight: FontWeight.w700,
-                                  fontSize: 18
+                                  fontSize: 18,
+                                  fontFamily: 'Poppins',
                                 ),
                                 ),
                               ),
@@ -98,6 +101,7 @@ class _WhereIsItHeldState extends State<WhereIsItHeld> {
                               fontSize: 18,
                               color: onLineTap == true? Color(0xff7F71D9) : Color(0xff666666),
                               fontWeight: FontWeight.w700,
+                              fontFamily: 'Poppins',
                             ),
                             ),
                           ),

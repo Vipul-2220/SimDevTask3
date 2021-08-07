@@ -11,12 +11,13 @@ class _InstagramURLState extends State<InstagramURL> {
 
   bool is_checked = false;
   String hintText = 'hhtps/ xyz.com';
+  String temp = '';
 
   @override
   Widget build(BuildContext context) {
     return AlertDialog(
       content: Container(
-        height: 120,
+        height: 130,
         width: 500,
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
@@ -27,6 +28,7 @@ class _InstagramURLState extends State<InstagramURL> {
                 color: Color(0xff666666),
                 fontWeight: FontWeight.w600,
                 fontSize: 20,
+                fontFamily: 'Poppins',
               ),
             ),
             TextField(
@@ -34,6 +36,8 @@ class _InstagramURLState extends State<InstagramURL> {
               onChanged: (value){
                 setState(() {
                   hintText = value;
+                  temp = value;
+                  print(temp);
                 });
               },
               decoration: InputDecoration(
@@ -42,6 +46,7 @@ class _InstagramURLState extends State<InstagramURL> {
                 hintStyle: TextStyle(
                   color: Colors.black26,
                   fontSize: 18,
+                  fontFamily: 'Poppins',
                 ),
                 border: UnderlineInputBorder(
                   borderSide: BorderSide(
@@ -70,6 +75,7 @@ class _InstagramURLState extends State<InstagramURL> {
                     color: Color(0xff666666),
                     fontWeight: FontWeight.w400,
                     fontSize: 18,
+                    fontFamily: 'Poppins',
                   ),
                 ),
               ],
@@ -93,9 +99,13 @@ class _InstagramURLState extends State<InstagramURL> {
                       style: TextStyle(
                         fontSize: 20,
                         color: Color(0xff666666),
+                        fontFamily: 'Poppins',
                       ),
                     ),
                     onTap: () {
+                      setState(() {
+                        hintText = temp;
+                      });
                       Navigator.of(context).pop();
                     },
                   ),
@@ -118,6 +128,7 @@ class _InstagramURLState extends State<InstagramURL> {
                           fontSize: 20,
                           color: Color(0xff7F71D9),
                           fontWeight: FontWeight.w500,
+                          fontFamily: 'Poppins',
                         ),
                       ),
                       onTap: () {

@@ -29,6 +29,7 @@ class _RepeatState extends State<Repeat> {
         style: const TextStyle(
           color: Color(0xff666666),
           fontSize: 18,
+          fontFamily: 'Poppins',
         ),
         underline: null,
         onChanged: (String? newValue) {

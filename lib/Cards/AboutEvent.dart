@@ -20,7 +20,7 @@ class _AboutEventState extends State<AboutEvent> {
   final dateformate = DateFormat('dd MMM yy');
 
   DateTime _date = DateTime.now();
-  Future<Null> _selectDate(BuildContext context) async {
+  Future<Null> selectDate(BuildContext context) async {
     DateTime? _datePicker = await showDatePicker(
       context: context,
       initialDate: _date,
@@ -48,11 +48,13 @@ class _AboutEventState extends State<AboutEvent> {
           children: [
             Padding(
               padding:
-                  const EdgeInsets.symmetric(vertical: 10.0, horizontal: 70),
+                  const EdgeInsets.only(top: 10.0, left: 70),
               child: Text(
                 'About your Event',
                 style: TextStyle(
                   fontSize: 30,
+                  fontFamily: 'Poppins',
+                  fontWeight: FontWeight.w600,
                 ),
               ),
             ),
@@ -67,6 +69,7 @@ class _AboutEventState extends State<AboutEvent> {
                   color: Color(0xff666666),
                   fontWeight: FontWeight.w600,
                   fontSize: 18,
+                  fontFamily: 'Poppins',
                 ),
               ),
             ),
@@ -79,6 +82,7 @@ class _AboutEventState extends State<AboutEvent> {
                     hintText: 'Event Name',
                     hintStyle: TextStyle(
                       color: Colors.black26,
+                      fontFamily: 'Poppins',
                     ),
                     border: UnderlineInputBorder(
                       borderSide: BorderSide(
@@ -106,6 +110,7 @@ class _AboutEventState extends State<AboutEvent> {
                           color: Color(0xff666666),
                           fontSize: 18,
                           fontWeight: FontWeight.w600,
+                          fontFamily: 'Poppins',
                         ),
                       ),
                       SizedBox(
@@ -124,12 +129,13 @@ class _AboutEventState extends State<AboutEvent> {
                               color:
                                   tap == true ? Colors.black : Colors.black12,
                               fontSize: 18,
+                              fontFamily: 'Poppins',
                             ),
                           ),
                           onTap: () {
                             setState(() {
                               tap = true;
-                              _selectDate(context);
+                              selectDate(context);
                             });
                           },
                         ),
@@ -151,6 +157,7 @@ class _AboutEventState extends State<AboutEvent> {
                           color: Color(0xff666666),
                           fontSize: 18,
                           fontWeight: FontWeight.w600,
+                          fontFamily: 'Poppins',
                         ),
                       ),
                       SizedBox(
@@ -179,6 +186,7 @@ class _AboutEventState extends State<AboutEvent> {
                   color: Color(0xff666666),
                   fontSize: 18,
                   fontWeight: FontWeight.w600,
+                  fontFamily: 'Poppins',
                 ),
               ),
             ),
@@ -189,7 +197,7 @@ class _AboutEventState extends State<AboutEvent> {
                 children: [
                   Time(),
                   Padding(
-                    padding: const EdgeInsets.only(right: 60.0),
+                    padding: const EdgeInsets.only(right: 50.0),
                     child: Container(
                       child: Row(
                         children: [
@@ -210,6 +218,7 @@ class _AboutEventState extends State<AboutEvent> {
                             style: TextStyle(
                               color: Colors.black87,
                               fontSize: 18,
+                              fontFamily: 'Poppins',
                             ),
                           ),
                         ],
@@ -230,6 +239,7 @@ class _AboutEventState extends State<AboutEvent> {
                       color: Color(0xff666666),
                       fontSize: 18,
                       fontWeight: FontWeight.w600,
+                      fontFamily: 'Poppins',
                     ),
                   ),
                   Padding(
@@ -247,6 +257,7 @@ class _AboutEventState extends State<AboutEvent> {
                   color: Color(0xff666666),
                   fontSize: 18,
                   fontWeight: FontWeight.w600,
+                  fontFamily: 'Poppins',
                 ),
               ),
             ),
@@ -272,6 +283,7 @@ class _AboutEventState extends State<AboutEvent> {
                         color: Color(0xff666666),
                         fontSize: 16,
                         fontWeight: FontWeight.w600,
+                        fontFamily: 'Poppins',
                       ),
                       ),
                     ],

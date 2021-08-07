@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:simdev_task3/Popups/FeeDistribution.dart';
+import 'package:simdev_task3/Popups/CouponCode.dart';
+import 'package:simdev_task3/Screens/FourthScreen.dart';
 
 class HowDoYouPay extends StatefulWidget {
   const HowDoYouPay({Key? key}) : super(key: key);
@@ -27,13 +30,14 @@ class _HowDoYouPayState extends State<HowDoYouPay> {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Padding(
-              padding: const EdgeInsets.only(top: 30.0, left: 30),
+              padding: const EdgeInsets.only(top: 30.0, left: 60),
               child: Text(
                 'How do you pay?',
                 style: TextStyle(
                   fontSize: 30,
-                  fontWeight: FontWeight.w500,
+                  fontWeight: FontWeight.w600,
                   color: Color(0xff363636),
+                  fontFamily: 'Poppins',
                 ),
               ),
             ),
@@ -48,6 +52,7 @@ class _HowDoYouPayState extends State<HowDoYouPay> {
                   color: Color(0xff666666),
                   fontWeight: FontWeight.w600,
                   fontSize: 20,
+                  fontFamily: 'Poppins',
                 ),
               ),
             ),
@@ -61,6 +66,7 @@ class _HowDoYouPayState extends State<HowDoYouPay> {
                     style: TextStyle(
                       color: Color(0xff666666),
                       fontSize: 20,
+                      fontFamily: 'Poppins',
                     ),
                   ),
                   Padding(
@@ -78,6 +84,7 @@ class _HowDoYouPayState extends State<HowDoYouPay> {
                           hintStyle: TextStyle(
                             color: Colors.black26,
                             fontSize: 18,
+                            fontFamily: 'Poppins',
                           ),
                           border: UnderlineInputBorder(
                             borderSide: BorderSide(
@@ -108,6 +115,7 @@ class _HowDoYouPayState extends State<HowDoYouPay> {
                     style: TextStyle(
                       color: Color(0xff666666),
                       fontSize: 20,
+                      fontFamily: 'Poppins',
                     ),
                   ),
                 ],
@@ -117,37 +125,59 @@ class _HowDoYouPayState extends State<HowDoYouPay> {
               padding: const EdgeInsets.all(10.0),
               child: Row(
                 children: [
-                  Text(
-                    'Add fee distribution',
-                    style: TextStyle(
-                      color: Color(0xff666666),
-                      fontSize: 20,
+                  GestureDetector(
+                    onTap:(){
+                      showDialog<void>(
+                          context: context,
+                          builder:( BuildContext context){
+                            return FeeDistribution();
+                          },
+                      );
+                    },
+                    child: Text(
+                      'Add fee distribution',
+                      style: TextStyle(
+                        color: Color(0xff666666),
+                        fontSize: 20,
+                        fontFamily: 'Poppins',
+                      ),
                     ),
                   ),
                   Padding(
-                    padding: const EdgeInsets.only(left: 20.0),
-                    child: Container(
-                      height: 30,
-                      width: 145,
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(5),
-                        color: Color(0xffF0F0F0),
-                      ),
-                      child: Row(
-                        children: [
-                          Padding(
-                            padding: const EdgeInsets.symmetric(horizontal: 10.0),
-                            child: SvgPicture.asset('icons/tag.svg',
-                              height: 20,
+                    padding: const EdgeInsets.only(left: 10.0),
+                    child: GestureDetector(
+                      onTap:(){
+                        showDialog<void>(
+                          context: context,
+                          builder:( BuildContext context){
+                            return CouponCode();
+                          },
+                        );
+                      },
+                      child: Container(
+                        height: 30,
+                        width: 155,
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(5),
+                          color: Color(0xffF0F0F0),
+                        ),
+                        child: Row(
+                          children: [
+                            Padding(
+                              padding: const EdgeInsets.symmetric(horizontal: 10.0),
+                              child: SvgPicture.asset('icons/tag.svg',
+                                height: 20,
+                              ),
                             ),
-                          ),
-                          Text('Coupon Code',
-                            style: TextStyle(
-                              color: Color(0xff666666),
-                              fontSize: 16,
+                            Text('Coupon Code',
+                              style: TextStyle(
+                                color: Color(0xff666666),
+                                fontSize: 16,
+                                fontFamily: 'Poppins',
+                              ),
                             ),
-                          ),
-                        ],
+                          ],
+                        ),
                       ),
                     ),
                   ),
@@ -163,6 +193,7 @@ class _HowDoYouPayState extends State<HowDoYouPay> {
                   color: Color(0xff666666),
                   fontWeight: FontWeight.w600,
                   fontSize: 20,
+                  fontFamily: 'Poppins',
                 ),
               ),
             ),
@@ -189,6 +220,7 @@ class _HowDoYouPayState extends State<HowDoYouPay> {
                     style: TextStyle(
                       color: Color(0xff666666),
                       fontSize: 18,
+                      fontFamily: 'Poppins',
                     ),
                   ),
                   SizedBox(width: 30,),
@@ -210,6 +242,7 @@ class _HowDoYouPayState extends State<HowDoYouPay> {
                     style: TextStyle(
                       color: Color(0xff666666),
                       fontSize: 18,
+                      fontFamily: 'Poppins',
                     ),
                   ),
                 ],
@@ -237,9 +270,10 @@ class _HowDoYouPayState extends State<HowDoYouPay> {
                     style: TextStyle(
                       color: Color(0xff666666),
                       fontSize: 18,
+                      fontFamily: 'Poppins',
                     ),
                   ),
-                  SizedBox(width: 40,),
+                  SizedBox(width: 25,),
                   Checkbox(
                       activeColor: Color(0xff7F71D9),
                       side: BorderSide(
@@ -258,6 +292,7 @@ class _HowDoYouPayState extends State<HowDoYouPay> {
                     style: TextStyle(
                       color: Color(0xff666666),
                       fontSize: 18,
+                      fontFamily: 'Poppins',
                     ),
                   ),
                 ],
@@ -285,6 +320,7 @@ class _HowDoYouPayState extends State<HowDoYouPay> {
                     style: TextStyle(
                       color: Color(0xff666666),
                       fontSize: 20,
+                      fontFamily: 'Poppins',
                     ),
                   ),
                 ],
@@ -298,6 +334,7 @@ class _HowDoYouPayState extends State<HowDoYouPay> {
                 style: TextStyle(
                   color: Color(0xff666666),
                   fontSize: 20,
+                  fontFamily: 'Poppins',
                 ),
               ),
             ),
@@ -312,13 +349,14 @@ class _HowDoYouPayState extends State<HowDoYouPay> {
                     MaterialStateProperty.all(Color(0xff7F71D9)),
                   ),
                   onPressed: () {
-                    // Navigator.of(context).popAndPushNamed(ThirdScreen.id);
+                    Navigator.of(context).popAndPushNamed(FourthScreen.id);
                   },
                   child: Text(
                     'Done',
                     style: TextStyle(
                       color: Colors.white,
                       fontSize: 18,
+                      fontFamily: 'Poppins',
                     ),
                   ),
                 ),

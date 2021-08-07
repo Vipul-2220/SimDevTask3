@@ -30,6 +30,7 @@ class _AlertTimeState extends State<AlertTime> {
         style: const TextStyle(
           color: Color(0xff666666),
           fontSize: 18,
+          fontFamily: 'Poppins',
         ),
         underline: null,
         onChanged: (String? newValue) {

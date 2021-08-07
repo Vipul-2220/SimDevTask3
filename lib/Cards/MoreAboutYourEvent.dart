@@ -21,13 +21,14 @@ class _MoreAboutYourEventState extends State<MoreAboutYourEvent> {
           children: [
             Padding(
               padding:
-                  const EdgeInsets.only(top: 30.0, left: 30),
+                  const EdgeInsets.only(top: 30.0, left: 20),
               child: Text(
                 'More about your Event!',
                 style: TextStyle(
                   fontSize: 30,
-                  fontWeight: FontWeight.w500,
+                  fontWeight: FontWeight.w600,
                   color: Color(0xff363636),
+                  fontFamily: 'Poppins',
                 ),
               ),
             ),
@@ -42,6 +43,7 @@ class _MoreAboutYourEventState extends State<MoreAboutYourEvent> {
                   color: Color(0xff666666),
                   fontWeight: FontWeight.w600,
                   fontSize: 20,
+                  fontFamily: 'Poppins',
                 ),
               ),
             ),
@@ -55,6 +57,7 @@ class _MoreAboutYourEventState extends State<MoreAboutYourEvent> {
                   hintStyle: TextStyle(
                     color: Colors.black26,
                     fontSize: 18,
+                    fontFamily: 'Poppins',
                   ),
                   border: UnderlineInputBorder(
                     borderSide: BorderSide(
@@ -104,15 +107,17 @@ class _MoreAboutYourEventState extends State<MoreAboutYourEvent> {
                   style: TextStyle(
                     color: Color(0xff666666),
                     fontSize: 18,
+                    fontFamily: 'Poppins',
                   ),
                 ),
                 Padding(
-                  padding: const EdgeInsets.only(left: 90.0),
+                  padding: const EdgeInsets.only(left: 80.0),
                   child: Text(
                     '0/2600',
                     style: TextStyle(
                       color: Colors.black26,
                       fontSize: 18,
+                      fontFamily: 'Poppins',
                     ),
                   ),
                 ),
@@ -120,7 +125,7 @@ class _MoreAboutYourEventState extends State<MoreAboutYourEvent> {
             ),
             Padding(
               padding:
-                  const EdgeInsets.symmetric(vertical: 30.0, horizontal: 15),
+                  const EdgeInsets.only(top: 30.0, left: 10, right: 10),
               child: Container(
                 height: 70,
                 decoration: BoxDecoration(
@@ -128,7 +133,7 @@ class _MoreAboutYourEventState extends State<MoreAboutYourEvent> {
                   color: Color(0xffF0F0F0),
                 ),
                 child: Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 120),
+                  padding: const EdgeInsets.symmetric(horizontal: 110),
                   child: Row(
                     children: [
                       Icon(
@@ -140,6 +145,7 @@ class _MoreAboutYourEventState extends State<MoreAboutYourEvent> {
                         style: TextStyle(
                           color: Color(0xff666666),
                           fontSize: 18,
+                          fontFamily: 'Poppins',
                         ),
                       ),
                     ],
@@ -155,6 +161,7 @@ class _MoreAboutYourEventState extends State<MoreAboutYourEvent> {
                   color: Color(0xff666666),
                   fontWeight: FontWeight.w600,
                   fontSize: 20,
+                  fontFamily: 'Poppins',
                 ),
               ),
             ),
@@ -199,6 +206,7 @@ class _MoreAboutYourEventState extends State<MoreAboutYourEvent> {
                 style: TextStyle(
                   color: Color(0xff666666),
                   fontSize: 20,
+                  fontFamily: 'Poppins',
                 ),
               ),
             ),

@@ -31,8 +31,9 @@ class _HowToGetInTouchState extends State<HowToGetInTouch> {
                 'How to get in touch?',
                 style: TextStyle(
                   fontSize: 30,
-                  fontWeight: FontWeight.w500,
+                  fontWeight: FontWeight.w600,
                   color: Color(0xff363636),
+                  fontFamily: 'Poppins',
                 ),
               ),
             ),
@@ -47,6 +48,7 @@ class _HowToGetInTouchState extends State<HowToGetInTouch> {
                   color: Color(0xff666666),
                   fontWeight: FontWeight.w600,
                   fontSize: 20,
+                  fontFamily: 'Poppins',
                 ),
               ),
             ),
@@ -60,6 +62,7 @@ class _HowToGetInTouchState extends State<HowToGetInTouch> {
                   hintStyle: TextStyle(
                     color: Colors.black26,
                     fontSize: 18,
+                    fontFamily: 'Poppins',
                   ),
                   border: UnderlineInputBorder(
                     borderSide: BorderSide(
@@ -80,6 +83,7 @@ class _HowToGetInTouchState extends State<HowToGetInTouch> {
                   color: Color(0xff666666),
                   fontWeight: FontWeight.w400,
                   fontSize: 20,
+                  fontFamily: 'Poppins',
                 ),
               ),
             ),
@@ -96,6 +100,7 @@ class _HowToGetInTouchState extends State<HowToGetInTouch> {
                       color: Color(0xff666666),
                       fontWeight: FontWeight.w600,
                       fontSize: 20,
+                      fontFamily: 'Poppins',
                     ),
                   ),
                 ),
@@ -107,6 +112,7 @@ class _HowToGetInTouchState extends State<HowToGetInTouch> {
                       color: Color(0xff666666),
                       fontWeight: FontWeight.w600,
                       fontSize: 20,
+                      fontFamily: 'Poppins',
                     ),
                   ),
                 ),
@@ -130,6 +136,7 @@ class _HowToGetInTouchState extends State<HowToGetInTouch> {
                         hintStyle: TextStyle(
                           color: Colors.black26,
                           fontSize: 18,
+                          fontFamily: 'Poppins',
                         ),
                         border: UnderlineInputBorder(
                           borderSide: BorderSide(
@@ -161,6 +168,7 @@ class _HowToGetInTouchState extends State<HowToGetInTouch> {
                         hintStyle: TextStyle(
                           color: Colors.black26,
                           fontSize: 18,
+                          fontFamily: 'Poppins',
                         ),
                         border: UnderlineInputBorder(
                           borderSide: BorderSide(
@@ -184,6 +192,7 @@ class _HowToGetInTouchState extends State<HowToGetInTouch> {
                   color: Color(0xff666666),
                   fontWeight: FontWeight.w400,
                   fontSize: 20,
+                  fontFamily: 'Poppins',
                 ),
               ),
             ),
@@ -336,6 +345,7 @@ class _HowToGetInTouchState extends State<HowToGetInTouch> {
                         style: TextStyle(
                           color: Colors.white,
                           fontSize: 18,
+                          fontFamily: 'Poppins',
                         ),
                       ),
                       Icon(

@@ -16,7 +16,7 @@ class _FacebookURLState extends State<FacebookURL> {
   Widget build(BuildContext context) {
     return AlertDialog(
       content: Container(
-        height: 120,
+        height: 130,
         width: 500,
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
@@ -27,6 +27,7 @@ class _FacebookURLState extends State<FacebookURL> {
                 color: Color(0xff666666),
                 fontWeight: FontWeight.w600,
                 fontSize: 20,
+                fontFamily: 'Poppins',
               ),
             ),
             TextField(
@@ -42,6 +43,7 @@ class _FacebookURLState extends State<FacebookURL> {
                 hintStyle: TextStyle(
                   color: Colors.black26,
                   fontSize: 18,
+                  fontFamily: 'Poppins',
                 ),
                 border: UnderlineInputBorder(
                   borderSide: BorderSide(
@@ -70,6 +72,7 @@ class _FacebookURLState extends State<FacebookURL> {
                     color: Color(0xff666666),
                     fontWeight: FontWeight.w400,
                     fontSize: 18,
+                    fontFamily: 'Poppins',
                   ),
                 ),
               ],
@@ -93,6 +96,7 @@ class _FacebookURLState extends State<FacebookURL> {
                       style: TextStyle(
                         fontSize: 20,
                         color: Color(0xff666666),
+                        fontFamily: 'Poppins',
                       ),
                     ),
                     onTap: () {
@@ -118,6 +122,7 @@ class _FacebookURLState extends State<FacebookURL> {
                           fontSize: 20,
                           color: Color(0xff7F71D9),
                           fontWeight: FontWeight.w500,
+                          fontFamily: 'Poppins',
                         ),
                       ),
                       onTap: () {

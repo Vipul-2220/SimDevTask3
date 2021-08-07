@@ -44,6 +44,7 @@ class _FirstScreenState extends State<FirstScreen> {
                   Text('Home',
                     style: TextStyle(
                       color: Color(0xff7F71D9),
+                      fontFamily: 'Poppins',
                     ),
                   )
                 ],
@@ -61,6 +62,7 @@ class _FirstScreenState extends State<FirstScreen> {
                   Text('Create New',
                     style: TextStyle(
                       color: Color(0xff7F71D9),
+                      fontFamily: 'Poppins',
                     ),
                   )
                 ],
@@ -78,6 +80,7 @@ class _FirstScreenState extends State<FirstScreen> {
                   Text('EAG',
                     style: TextStyle(
                       color: Color(0xff7F71D9),
+                      fontFamily: 'Poppins',
                     ),
                   )
                 ],
@@ -95,6 +98,7 @@ class _FirstScreenState extends State<FirstScreen> {
                   Text('Profile',
                     style: TextStyle(
                       color: Color(0xff7F71D9),
+                      fontFamily: 'Poppins',
                     ),
                   )
                 ],
@@ -127,6 +131,7 @@ class _FirstScreenState extends State<FirstScreen> {
                         style: TextStyle(
                           fontSize: 40,
                           fontWeight: FontWeight.w600,
+                          fontFamily: 'Poppins',
                         ),
                       ),
                     ),

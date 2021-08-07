@@ -25,6 +25,7 @@ class _AdressBarState extends State<AdressBar> {
               color: Color(0xff666666),
               fontWeight: FontWeight.w600,
               fontSize: 18,
+              fontFamily: 'Poppins',
             ),
           ),
         ),
@@ -37,6 +38,7 @@ class _AdressBarState extends State<AdressBar> {
               hintText: 'Lilabagh',
               hintStyle: TextStyle(
                 color: Colors.black26,
+                fontFamily: 'Poppins',
               ),
               border: UnderlineInputBorder(
                 borderSide: BorderSide(
@@ -62,6 +64,7 @@ class _AdressBarState extends State<AdressBar> {
                       color: Color(0xff666666),
                       fontWeight: FontWeight.w600,
                       fontSize: 18,
+                      fontFamily: 'Poppins',
                     ),
                   ),
                 ),
@@ -73,6 +76,7 @@ class _AdressBarState extends State<AdressBar> {
                       color: Color(0xff666666),
                       fontWeight: FontWeight.w600,
                       fontSize: 18,
+                      fontFamily: 'Poppins',
                     ),
                   ),
                 ),
@@ -92,6 +96,7 @@ class _AdressBarState extends State<AdressBar> {
                         hintText: '57/8',
                         hintStyle: TextStyle(
                           color: Colors.black26,
+                          fontFamily: 'Poppins',
                         ),
                         border: UnderlineInputBorder(
                           borderSide: BorderSide(
@@ -114,6 +119,7 @@ class _AdressBarState extends State<AdressBar> {
                         hintText: '87 Sean Manors',
                         hintStyle: TextStyle(
                           color: Colors.black26,
+                          fontFamily: 'Poppins',
                         ),
                         border: UnderlineInputBorder(
                           borderSide: BorderSide(
@@ -144,6 +150,7 @@ class _AdressBarState extends State<AdressBar> {
                       color: Color(0xff666666),
                       fontWeight: FontWeight.w600,
                       fontSize: 18,
+                      fontFamily: 'Poppins',
                     ),
                   ),
                 ),
@@ -155,6 +162,7 @@ class _AdressBarState extends State<AdressBar> {
                       color: Color(0xff666666),
                       fontWeight: FontWeight.w600,
                       fontSize: 18,
+                      fontFamily: 'Poppins',
                     ),
                   ),
                 ),
@@ -174,6 +182,7 @@ class _AdressBarState extends State<AdressBar> {
                         hintText: 'Mumbai',
                         hintStyle: TextStyle(
                           color: Colors.black26,
+                          fontFamily: 'Poppins',
                         ),
                         border: UnderlineInputBorder(
                           borderSide: BorderSide(
@@ -196,6 +205,7 @@ class _AdressBarState extends State<AdressBar> {
                         hintText: '422056',
                         hintStyle: TextStyle(
                           color: Colors.black26,
+                          fontFamily: 'Poppins',
                         ),
                         border: UnderlineInputBorder(
                           borderSide: BorderSide(
@@ -221,6 +231,7 @@ class _AdressBarState extends State<AdressBar> {
               color: Color(0xff666666),
               fontWeight: FontWeight.w600,
               fontSize: 18,
+              fontFamily: 'Poppins',
             ),
           ),
         ),
@@ -233,6 +244,7 @@ class _AdressBarState extends State<AdressBar> {
               hintText: 'Office',
               hintStyle: TextStyle(
                 color: Colors.black26,
+                fontFamily: 'Poppins',
               ),
               border: UnderlineInputBorder(
                 borderSide: BorderSide(
@@ -253,7 +265,7 @@ class _AdressBarState extends State<AdressBar> {
               Container(
                 color: Color(0xffF0F0F0),
                 height: 30,
-                width: 250,
+                width: 260,
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
@@ -264,12 +276,13 @@ class _AdressBarState extends State<AdressBar> {
                       ),
                     ),
                     Padding(
-                      padding: const EdgeInsets.only(right: 8.0),
+                      padding: const EdgeInsets.only(right: 0.0),
                       child: Text('Upload photos of location',
                       style: TextStyle(
                         color: Color(0xff666666),
                         fontWeight: FontWeight.w400,
                         fontSize: 18,
+                        fontFamily: 'Poppins',
                       ),
                       ),
                     ),
@@ -293,6 +306,7 @@ class _AdressBarState extends State<AdressBar> {
                         style: TextStyle(
                           color: Colors.white,
                           fontSize: 18,
+                          fontFamily: 'Poppins',
                         ),
                       ),
                       Icon(Icons.chevron_right,

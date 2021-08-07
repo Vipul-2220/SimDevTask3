@@ -43,6 +43,7 @@ class _ThirdScreenState extends State<ThirdScreen> {
                   Text('Home',
                     style: TextStyle(
                       color: Color(0xff7F71D9),
+                      fontFamily: 'Poppins',
                     ),
                   )
                 ],
@@ -60,6 +61,7 @@ class _ThirdScreenState extends State<ThirdScreen> {
                   Text('Create New',
                     style: TextStyle(
                       color: Color(0xff7F71D9),
+                      fontFamily: 'Poppins',
                     ),
                   )
                 ],
@@ -77,6 +79,7 @@ class _ThirdScreenState extends State<ThirdScreen> {
                   Text('EAG',
                     style: TextStyle(
                       color: Color(0xff7F71D9),
+                      fontFamily: 'Poppins',
                     ),
                   )
                 ],
@@ -94,6 +97,7 @@ class _ThirdScreenState extends State<ThirdScreen> {
                   Text('Profile',
                     style: TextStyle(
                       color: Color(0xff7F71D9),
+                      fontFamily: 'Poppins',
                     ),
                   )
                 ],
@@ -113,7 +117,9 @@ class _ThirdScreenState extends State<ThirdScreen> {
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
                     IconButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.of(context).pop();
+                      },
                       icon: Icon(
                         Icons.arrow_back,
                         size: 35,
@@ -126,6 +132,7 @@ class _ThirdScreenState extends State<ThirdScreen> {
                         style: TextStyle(
                           fontSize: 40,
                           fontWeight: FontWeight.w600,
+                          fontFamily: 'Poppins',
                         ),
                       ),
                     ),

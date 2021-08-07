@@ -24,6 +24,7 @@ class _Time1State extends State<Time1> {
       style: TextStyle(
         color: tap5 == true ? Colors.black : Colors.black12,
         fontSize: 20,
+        fontFamily: 'Poppins',
       ),
       onChanged: (String? newValue) {
         setState(() {

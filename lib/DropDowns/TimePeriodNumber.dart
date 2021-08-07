@@ -28,7 +28,10 @@ class _TimePeriodNumberState extends State<TimePeriodNumber> {
           color: Colors.black87,
         ),
         style: const TextStyle(
-            color: Color(0xff666666), fontSize: 18),
+            color: Color(0xff666666),
+            fontSize: 18,
+          fontFamily: 'Poppins',
+        ),
         onChanged: (String? newValue) {
           setState(() {
             dropdownvalue = newValue!;

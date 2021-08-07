@@ -29,6 +29,7 @@ class _TimeState extends State<Time> {
           hintStyle: TextStyle(
             color: tap2 == true ? Colors.black : Colors.black12,
             fontSize: 18,
+            fontFamily: 'Poppins',
           ),
         ),
         onTap: () {
@@ -51,6 +52,7 @@ class _TimeState extends State<Time> {
                                 color: Color(0xff666666),
                                 fontSize: 18,
                                 fontWeight: FontWeight.w600,
+                                fontFamily: 'Poppins',
                               ),
                             ),
                             SizedBox(
@@ -62,6 +64,7 @@ class _TimeState extends State<Time> {
                                 color: Color(0xff666666),
                                 fontSize: 18,
                                 fontWeight: FontWeight.w600,
+                                fontFamily: 'Poppins',
                               ),
                             ),
                           ],
@@ -79,6 +82,7 @@ class _TimeState extends State<Time> {
                                     ? Colors.black
                                     : Colors.black12,
                                 fontSize: 20,
+                                fontFamily: 'Poppins',
                               ),
                               onChanged: (String? newValue) {
                                 setState(() {
@@ -115,6 +119,7 @@ class _TimeState extends State<Time> {
                                     ? Colors.black
                                     : Colors.black12,
                                 fontSize: 20,
+                                fontFamily: 'Poppins',
                               ),
                               onChanged: (String? newValue) {
                                 setState(() {
@@ -158,6 +163,7 @@ class _TimeState extends State<Time> {
                                   style: TextStyle(
                                     fontSize: 20,
                                     color: Color(0xff666666),
+                                    fontFamily: 'Poppins',
                                   ),
                                 ),
                                 onTap: () {
@@ -179,6 +185,7 @@ class _TimeState extends State<Time> {
                                     style: TextStyle(
                                       fontSize: 20,
                                       color: Color(0xff7F71D9),
+                                      fontFamily: 'Poppins',
                                     ),
                                   ),
                                   onTap: () {

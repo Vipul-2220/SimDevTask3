@@ -15,7 +15,7 @@ class _TwitterURLState extends State<TwitterURL> {
   Widget build(BuildContext context) {
     return AlertDialog(
       content: Container(
-        height: 120,
+        height: 130,
         width: 500,
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
@@ -26,6 +26,7 @@ class _TwitterURLState extends State<TwitterURL> {
                 color: Color(0xff666666),
                 fontWeight: FontWeight.w600,
                 fontSize: 20,
+                fontFamily: 'Poppins',
               ),
             ),
             TextField(
@@ -41,6 +42,7 @@ class _TwitterURLState extends State<TwitterURL> {
                 hintStyle: TextStyle(
                   color: Colors.black26,
                   fontSize: 18,
+                  fontFamily: 'Poppins',
                 ),
                 border: UnderlineInputBorder(
                   borderSide: BorderSide(
@@ -69,6 +71,7 @@ class _TwitterURLState extends State<TwitterURL> {
                     color: Color(0xff666666),
                     fontWeight: FontWeight.w400,
                     fontSize: 18,
+                    fontFamily: 'Poppins',
                   ),
                 ),
               ],
@@ -92,6 +95,7 @@ class _TwitterURLState extends State<TwitterURL> {
                       style: TextStyle(
                         fontSize: 20,
                         color: Color(0xff666666),
+                        fontFamily: 'Poppins',
                       ),
                     ),
                     onTap: () {
@@ -117,6 +121,7 @@ class _TwitterURLState extends State<TwitterURL> {
                           fontSize: 20,
                           color: Color(0xff7F71D9),
                           fontWeight: FontWeight.w500,
+                          fontFamily: 'Poppins',
                         ),
                       ),
                       onTap: () {

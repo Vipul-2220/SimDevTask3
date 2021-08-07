@@ -28,6 +28,7 @@ class _OnLineBarState extends State<OnLineBar> {
                 color: Color(0xff666666),
                 fontWeight: FontWeight.w600,
                 fontSize: 18,
+                fontFamily: 'Poppins',
               ),
             ),
           ),
@@ -50,6 +51,7 @@ class _OnLineBarState extends State<OnLineBar> {
                 hintText: 'Enter a URL',
                 hintStyle: TextStyle(
                   color: Colors.black26,
+                  fontFamily: 'Poppins',
                 ),
                 border: UnderlineInputBorder(
                   borderSide: BorderSide(
@@ -73,6 +75,7 @@ class _OnLineBarState extends State<OnLineBar> {
                     color: Color(0xff666666),
                     fontWeight: FontWeight.w600,
                     fontSize: 18,
+                    fontFamily: 'Poppins',
                   ),
                 ),
               ),
@@ -95,6 +98,7 @@ class _OnLineBarState extends State<OnLineBar> {
                     color: Color(0xff666666),
                     fontWeight: FontWeight.w400,
                     fontSize: 18,
+                    fontFamily: 'Poppins',
                   ),
                   ),
                 ],
@@ -119,6 +123,7 @@ class _OnLineBarState extends State<OnLineBar> {
                       color: Color(0xff666666),
                       fontWeight: FontWeight.w400,
                       fontSize: 18,
+                      fontFamily: 'Poppins',
                     ),
                   ),
                 ],
@@ -143,6 +148,7 @@ class _OnLineBarState extends State<OnLineBar> {
                       color: Color(0xff666666),
                       fontWeight: FontWeight.w400,
                       fontSize: 18,
+                      fontFamily: 'Poppins',
                     ),
                   ),
                 ],
@@ -167,6 +173,7 @@ class _OnLineBarState extends State<OnLineBar> {
                       color: Color(0xff666666),
                       fontWeight: FontWeight.w400,
                       fontSize: 18,
+                      fontFamily: 'Poppins',
                     ),
                   ),
                 ],
@@ -193,6 +200,7 @@ class _OnLineBarState extends State<OnLineBar> {
                       style: TextStyle(
                         color: Colors.white,
                         fontSize: 18,
+                        fontFamily: 'Poppins',
                       ),
                     ),
                     Icon(Icons.chevron_right,

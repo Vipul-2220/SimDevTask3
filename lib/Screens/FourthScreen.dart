@@ -1,20 +1,18 @@
 import 'package:flutter/material.dart';
-import 'package:simdev_task3/Cards/HowToGetInTouch.dart';
-import 'package:simdev_task3/Cards/MoreAboutYourEvent.dart';
-import 'package:simdev_task3/TopToolbar/TopToolbar.dart';
-import 'package:simdev_task3/TopToolbar/TopToolbar2.dart';
+import 'package:simdev_task3/Cards/RegistrationForm.dart';
+import 'package:simdev_task3/TopToolbar/TopToolbar4.dart';
 
-class SecondScreen extends StatefulWidget {
+class FourthScreen extends StatefulWidget {
 
-  static String id = 'SecondScreen';
+  static String id = 'FourthScreen';
 
-  const SecondScreen({Key? key}) : super(key: key);
+  const FourthScreen({Key? key}) : super(key: key);
 
   @override
-  _SecondScreenState createState() => _SecondScreenState();
+  _FourthScreenState createState() => _FourthScreenState();
 }
 
-class _SecondScreenState extends State<SecondScreen> {
+class _FourthScreenState extends State<FourthScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -142,11 +140,9 @@ class _SecondScreenState extends State<SecondScreen> {
                 ),
                 Padding(
                   padding: const EdgeInsets.symmetric(vertical: 20.0),
-                  child: TopToolbar2(),
+                  child: TopToolbar4(),
                 ),
-                MoreAboutYourEvent(),
-                HowToGetInTouch(),
-                // WhereIsItHeld(),
+                RegistrationForm(),
               ],
             ),
           ),

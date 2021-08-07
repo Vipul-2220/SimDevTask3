@@ -15,7 +15,7 @@ class _CategoryState extends State<Category> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: 230,
+      width: 190,
       child:
       DropdownButton<String>(
         underline: Container(
@@ -24,7 +24,7 @@ class _CategoryState extends State<Category> {
         ),
         value: dropdownvalue4,
         icon: Padding(
-          padding: const EdgeInsets.only(left: 70.0),
+          padding: const EdgeInsets.only(left: 20.0),
           child: const Icon(
             Icons.keyboard_arrow_down,
             color: Colors.black45,
@@ -33,6 +33,7 @@ class _CategoryState extends State<Category> {
         style: TextStyle(
           color: tap3 == true ? Colors.black : Colors.black12,
           fontSize: 20,
+          fontFamily: 'Poppins',
         ),
         onChanged: (String? newValue) {
           setState(() {
